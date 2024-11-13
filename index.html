@@ -7,8 +7,13 @@
   <title>Swiss Wine Guys – Importers of Fine Swiss Wine</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
     html, body {
       margin: 0;
       padding: 0;
@@ -26,13 +31,7 @@
     header {
       padding: 2rem;
     }
-    h1, h2, h3, h4 {
-      font-family: "Playfair Display", serif;
-      font-optical-sizing: auto;
-      font-weight: 700;
-      font-style: normal;
-    }
-    img {
+    header img {
       max-width: calc(100% - 4rem);
       max-height: calc(600px);
       margin: 0 auto;
@@ -44,8 +43,17 @@
         opacity: 1;
       }
     }
+    h1, h2, h3, h4 {
+      font-family: "Playfair Display", serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+      line-height: 1.2;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
     main {
-      background: #f7cccc;
+      background: #f9dcdc;
       padding: 2em;
     }
     main > * {
@@ -53,11 +61,33 @@
       margin-left: auto;
       margin-right: auto;
     }
-    p {
+    p, dl {
       font-family: "Lora", serif;
       font-optical-sizing: auto;
       font-weight: 400;
       font-style: normal;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    a {
+      color: #b20000; /* Swiss red for branding consistency */
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #800000;
+      text-decoration: underline;
+    }
+    dl > div {
+      display: block
+    }
+    dt {
+      display: inline;
+      font-weight: bold;
+    }
+    dd {
+      display: inline;
+      margin: 0;
     }
   </style>
 </head>
@@ -114,26 +144,36 @@
 
     <h2>Contact</h2>
 
-    <p>
-      <strong>Email:</strong>
-      <a href="mailto:info@theswisswineguys.com">
-        info@theswisswineguys.com
-      </a>
-    </p>
+    <dl>
 
-    <p>
-      <strong>Phone:</strong>
-      <a href="tel:+1-203-613-3524">
-        +1 (203) 613-3524
-      </a>
-    </p>
+      <div>
+        <dt>Email:</dt>
+        <dd>
+          <a href="mailto:info@theswisswineguys.com">
+            info@theswisswineguys.com
+          </a>
+        </dd>
+      </div>
 
-    <p>
-      <strong>Instagram:</strong>
-      <a href="https://www.instagram.com/theswisswineguys">
-        @theswisswineguys
-      </a>
-    </p>
+      <div>
+        <dt>Phone:</dt>
+        <dd>
+          <a href="tel:+1-203-613-3524">
+            +1 (203) 613-3524
+          </a>
+        </dd>
+      </div>
+
+      <div>
+        <dt>Instagram:</dt>
+        <dd>
+          <a href="https://www.instagram.com/theswisswineguys">
+            @theswisswineguys
+          </a>
+        </dd>
+      </div>
+
+    </dl>
 
   </main>
 
