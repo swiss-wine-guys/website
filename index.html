@@ -5,24 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="favicon.ico" />
   <title>Swiss Wine Guys – Importers of Fine Swiss Wine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
-      display: flex;
       justify-content: center;
       align-items: center;
       background-color: #f8f8f8;
+      color: #333;
       font-family: Arial, sans-serif;
     }
     body {
-      padding: 2em 0; /* Adds space at both top and bottom */
+      margin: 0 auto;
       box-sizing: border-box; /* Ensures padding doesn't affect overall height */
     }
+    header {
+      padding: 2rem;
+    }
+    h1, h2, h3, h4 {
+      font-family: "Playfair Display", serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+    }
     img {
-      max-width: 100%;
-      max-height: calc(100% - 4em); /* Account for both top and bottom padding */
+      max-width: calc(100% - 4rem);
+      max-height: calc(600px);
+      margin: 0 auto;
       opacity: 0;
       animation: fadeIn 1.5s forwards;
     }
@@ -31,12 +44,98 @@
         opacity: 1;
       }
     }
+    main {
+      background: #f7cccc;
+      padding: 2em;
+    }
+    main > * {
+      max-width: 40rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p {
+      font-family: "Lora", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
   </style>
 </head>
 <body>
-  <img
-    src="swiss-wine-logo.png"
-    alt="The Swiss Wine Guys – Importers of Fine Swiss Wine"
-  />
+  <header>
+
+    <h1 style="text-align: center;">
+      <img
+        src="/swiss-wine-logo.png"
+        alt="The Swiss Wine Guys – Importers of Fine Swiss Wine"
+      />
+    </h1>
+
+  </header>
+  
+  <main>
+
+    <h2>About Us</h2>  
+    <p>
+      The Swiss WIne Guys was born out of a simple idea: what does it take to share the world class wines of Switzerland with a wider audience here in the U.S.?
+      The answer was, of course, to start our very own import business!
+      A chance meeting in 2021 led to some very fortuitous meetings in 2022, which were then followed by even more fortuitous meetings in 2023.
+      Now, two years since those first meetings, we are proud to say that we have some incredible Swiss wines available in the NYC area with plans to expand even further!  
+    </p>
+
+    <h2>What We Do</h2>
+    <p>
+      We work to cultivate solid personal relationships with the winemakers we represent to ensure that we are bringing you wines of superior quality that are cultivated, harvested, and vinified with the utmost attention to detail and respect for the terroir.  We are also on hand to assist in the curation of Swiss wine-centered events either for private gatherings or promotions in and around NYC. If there is a particular wine or vineyard that you are looking to import either for yourself or for a private event we are more than happy to discuss how we can assist you. Contact us directly to learn about our current offerings and more!      
+    </p>
+
+    <h2>Our Partners / Who We Work With</h2>
+
+    <h3>Swiss Grapes</h3>
+    <p>
+      <a href="https://www.swissgrapes.com">www.swissgrapes.com</a>
+    </p>
+
+    <p>
+      We are very excited to be working with our friends at Swiss Grapes in Bursinel to source some of the finest wines Switzerland has to offer, and we are currently the exclusive U.S. importers of wines under their private label 'Cave des Larrets'.
+      Like us, they pride themselves on cultivating personal relationships with wine growers all over Switzerland to ensure the highest quality in every bottle.
+    </p>
+
+    <h3>Les Freres Dutruy</h3>
+    <p>
+      <a href="https://www.lesfreresdutruy.ch/en/">www.lesfreresdutruy.ch/en/</a>
+    </p>
+
+    <p>
+      In addition to overseeing the oldest wine nursery in Switzerland, Julien and Christian Dutruy are as hands-on as it gets when it comes to crafting superior wines. 
+      From hand-picking vines and following strict organic cultivation standards, to using modern vinification equipment and having a passion for sustainability,
+      the wines being produced by Les Freres Dutruy are nothing short of perfection. 
+      We are honored to count them as friends and partners in our mission to bring Swiss excellence in winemaking to the U.S.!     
+    </p>
+
+    <h2>Contact</h2>
+
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:info@theswisswineguys.com">
+        info@theswisswineguys.com
+      </a>
+    </p>
+
+    <p>
+      <strong>Phone:</strong>
+      <a href="tel:+1-203-613-3524">
+        +1 (203) 613-3524
+      </a>
+    </p>
+
+    <p>
+      <strong>Instagram:</strong>
+      <a href="https://www.instagram.com/theswisswineguys">
+        @theswisswineguys
+      </a>
+    </p>
+
+  </main>
+
 </body>
 </html>
