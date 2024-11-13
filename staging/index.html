@@ -61,7 +61,7 @@
       margin-left: auto;
       margin-right: auto;
     }
-    p {
+    p, dl {
       font-family: "Lora", serif;
       font-optical-sizing: auto;
       font-weight: 400;
@@ -77,6 +77,17 @@
     a:hover {
       color: #800000;
       text-decoration: underline;
+    }
+    dl > div {
+      display: block
+    }
+    dt {
+      display: inline;
+      font-weight: bold;
+    }
+    dd {
+      display: inline;
+      margin: 0;
     }
   </style>
 </head>
@@ -133,26 +144,36 @@
 
     <h2>Contact</h2>
 
-    <p>
-      <strong>Email:</strong>
-      <a href="mailto:info@theswisswineguys.com">
-        info@theswisswineguys.com
-      </a>
-    </p>
+    <dl>
 
-    <p>
-      <strong>Phone:</strong>
-      <a href="tel:+1-203-613-3524">
-        +1 (203) 613-3524
-      </a>
-    </p>
+      <div>
+        <dt>Email:</dt>
+        <dd>
+          <a href="mailto:info@theswisswineguys.com">
+            info@theswisswineguys.com
+          </a>
+        </dd>
+      </div>
 
-    <p>
-      <strong>Instagram:</strong>
-      <a href="https://www.instagram.com/theswisswineguys">
-        @theswisswineguys
-      </a>
-    </p>
+      <div>
+        <dt>Phone:</dt>
+        <dd>
+          <a href="tel:+1-203-613-3524">
+            +1 (203) 613-3524
+          </a>
+        </dd>
+      </div>
+
+      <div>
+        <dt>Instagram:</dt>
+        <dd>
+          <a href="https://www.instagram.com/theswisswineguys">
+            @theswisswineguys
+          </a>
+        </dd>
+      </div>
+
+    </dl>
 
   </main>
 
